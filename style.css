@@ -1,0 +1,104 @@
+/* CSS animation */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgb(220, 149, 126);
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(217, 48, 48);
+  animation-name: square;
+  animation-duration: 4s;
+  margin: auto;
+
+}
+
+h2 {
+  font-size: 52px;
+}
+
+
+
+@keyframes square {
+  0%   {background-color: rgb(217, 48, 48);}
+  10%  {background-color: #330066;}
+  20%  {background-color: #660066;}
+  45%  {background-color: #990066;}
+  70%  {background-color: #CC0066;}
+  100% {background-color: #FF0066;}
+  }
+
+/* Styling Rules for Tablet */
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 70px;
+    color:crimson;
+  }
+  
+}
+
+/* Styling Rules for a Smarthphone */
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+    color:rgb(40, 35, 181);
+  }
+  
+}
+
+/* Declaring CSS Variables in the root element */
+:root {
+  --colourOne: #1e4478;
+  --colourTwo: #B33951;
+  --colourThree: #3300CC;
+  --spacing: 10px;
+}
+
+.one {
+  background-color: var(--colourOne);
+  color: var(--colourTwo);
+  margin: var(--spacing);
+  padding: var(--spacing);
+}
+
+.two {
+  /* --colourTwo: black; */
+  background-color: var(--colourTwo);
+  color: var(--colourOne);
+  margin: var(--spacing);
+  padding: var(--spacing);
+}
+
+.three {
+  /* --colourTwo: black; */
+  background-color: var(--colourThree);
+  color: var(--colourOne);
+  margin: var(--spacing);
+  padding: var(--spacing);
+}
+
+.four {
+  /* --colourTwo: black; */
+  background-color: var(--colourTwo);
+  color: var(--colourOne);
+  margin: var(--spacing);
+  padding: var(--spacing);
+}
+
