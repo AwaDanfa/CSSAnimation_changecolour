@@ -14,13 +14,13 @@
 .container {
   display: flex;
   justify-content: center;
-  height: 50vh;
+  height: 30vh;
   align-items: center;
 }
 
 .square {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   background-color: rgb(217, 48, 48);
   animation-name: square;
   animation-duration: 4s;
